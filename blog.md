@@ -41,21 +41,19 @@ This analysis is based on ***NABCD* model**.
 
 ### Need
 
-[Top](#Contents)	[NABCD](#Demand Analysis)
+[Top](#Contents) [NABCD](#Demand Analysis)
 
 It's because the epidemic occurring worldwide that people can't get in touch with each other in the flesh and many activities are greatly affected even cancelled. This year's *Mid-Autumn Festival* holds the game '*Bobing*' as usual. And only goes online can it be hold as expected. So here is going to develop an online '*Bobing*' game for Chinese people and friends over the world. 
 
 ### Approach
 
-[Top](#Contents)	[NABCD](#Demand Analysis)
+[Top](#Contents) [NABCD](#Demand Analysis)
 
-*need edit*
-
-First, we need a software for us to design a simple prototype of our game. So we choose ink knives to bulid the framework of the Bobing game and finally put it on the Wechat small program platform. After we get a satisfing result, we will code for this prototype to achieve various functions. At last, we will adjust our UI and Arrangement of Game to make it more beautiful.
+First, we need a software for us to design a prototype of it. So we choose Modao to bulid the interface of the Bobing game. After we made a satisfing version, we will code for this prototype and achieve various functions. After all the main work are done, we will make some adjustments to our UI to make it more beautiful.
 
 ### Benefit
 
-[Top](#Contents)	[NABCD](#Demand Analysis)
+[Top](#Contents) [NABCD](#Demand Analysis)
 
 *need edit*
 
@@ -63,13 +61,13 @@ Customers can take part in Bobing game even they are not in the same place. And 
 
 ### Competition
 
-[Top](#Contents)	[NABCD](#Demand Analysis)
+[Top](#Contents) [NABCD](#Demand Analysis)
 
 *need edit*
 
 ### Delivery
 
-[Top](#Contents)	[NABCD](#Demand Analysis)
+[Top](#Contents) [NABCD](#Demand Analysis)
 
 *need edit*
 
@@ -79,11 +77,24 @@ Link: https://modao.cc/app/rhlZzkKVrktt3hHjMQcUhe #博饼原型-分享
 
 Tool used: Modao（墨刀）
 
+### Screenshots
+
+![主页](./modao/主页.png) ![规则说明](./modao/规则说明.png) ![关于页面](./modao/关于页面.png) 
+
+![单人模式](./modao/单人模式/单人模式.png) ![单人模式结果](./modao/单人模式/结果.png) 
+![多人模式](./modao/多人模式-主页/多人模式-主页.png) ![多人模式结果](./modao/多人模式-主页/游戏.png)  ![多人模式结果](./modao/多人模式-主页/结果.png) 
+
 ## Flow Chart
 
-
+![流程图](./modao/Flowchart/博饼-页面1.png)
 
 ## Pair Work
+
+![photo](./pics/pair_work/photo-2.jpg)
+
+## Summary
+
+In this period, we've learnt to design prototype before rushing into coding. And this huge change of mind is making us working with higher efficiency and building good products.
 
 
 
@@ -104,5 +115,5 @@ URL on github.com of this passage(download): https://liujiewentt.github.io/ee308
 URL on github.com of this passage(view with Github md): https://github.com/LiuJiewenTT/ee308fz_lab2/tree/main/blog.md
 
 URL on github.com of this passage(view as html): https://liujiewentt.github.io/ee308fz_lab2/blog.html<br/>
-URL on csdn.net of this passage(view as html): https://bbs.csdn.net/topics/608838406
+URL on csdn.net of this passage(view as html): https://bbs.csdn.net/topics/609001732
 
