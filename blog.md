@@ -1,5 +1,14 @@
 # Lab2-1 Bobing Prototype Blog
 
+This page provides best reading experience in the sequence of:
+
+1. *Typora*(md)
+2. Github.com(HTML)
+3. Github.com(md)
+4. CSDN.net
+
+Links provided in the [End](#End) Section.
+
 ## Contents
 
 [toc]
@@ -55,23 +64,23 @@ First, we need a software for us to design a prototype of it. So we choose Modao
 
 [Top](#Contents) [NABCD](#Demand Analysis)
 
-*need edit*
-
-Customers can take part in Bobing game even they are not in the same place. And this game will satisfy with people's need of Bobing game on Mid-Autumn festival.
+Customers can take part in Bobing game on the line, reducing antiepidemic pressure in the meanwhile . And this game will bring people the pleasure of playing with relatives and friends.
 
 ### Competition
 
 [Top](#Contents) [NABCD](#Demand Analysis)
 
-*need edit*
+We are making it good-looking and easy and fun to play with.
 
 ### Delivery
 
 [Top](#Contents) [NABCD](#Demand Analysis)
 
-*need edit*
+It's an open source project and can be found on GitHub. As app sharing is easy nowadays, we're going to build Android App. We will also put the demo video on bilibili.
 
 ## Prototype Development
+
+[Top](#Contents)
 
 Link: https://modao.cc/app/rhlZzkKVrktt3hHjMQcUhe #博饼原型-分享  
 
@@ -86,17 +95,21 @@ Tool used: Modao（墨刀）
 
 ## Flow Chart
 
+[Top](#Contents)
+
 ![流程图](./modao/Flowchart/博饼-页面1.png)
 
 ## Pair Work
+
+[Top](#Contents)
 
 ![photo](./pics/pair_work/photo-2.jpg)
 
 ## Summary
 
+[Top](#Contents)
+
 In this period, we've learnt to design prototype before rushing into coding. And this huge change of mind is making us working with higher efficiency and building good products.
-
-
 
 ## End
 
