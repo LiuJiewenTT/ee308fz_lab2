@@ -100,9 +100,9 @@ Tool used: Modao（墨刀）
 
 Project on Github.com: https://github.com/LiuJiewenTT/ee308fz_lab2
 
-URL on github.com of this passage(download): https://liujiewentt.github.io/ee308fz_lab2/development%20blog.md<br/>
-URL on github.com of this passage(view with Github md): https://github.com/LiuJiewenTT/ee308fz_lab2/tree/main/development%20blog.md
+URL on github.com of this passage(download): https://liujiewentt.github.io/ee308fz_lab2/blog.md<br/>
+URL on github.com of this passage(view with Github md): https://github.com/LiuJiewenTT/ee308fz_lab2/tree/main/blog.md
 
-URL on github.com of this passage(view as html): https://liujiewentt.github.io/ee308fz_lab2/development%20blog.html<br/>
+URL on github.com of this passage(view as html): https://liujiewentt.github.io/ee308fz_lab2/blog.html<br/>
 URL on csdn.net of this passage(view as html): https://bbs.csdn.net/topics/608838406
 
