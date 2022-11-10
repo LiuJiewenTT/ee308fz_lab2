@@ -7,7 +7,7 @@ This page provides best reading experience in the sequence of:
 3. Github.com(md)
 4. CSDN.net
 
-Links provided in the [End](#End) Section.
+Links are provided in the [End](#End) Section.
 
 ## Contents
 
