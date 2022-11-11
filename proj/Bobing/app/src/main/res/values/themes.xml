@@ -22,4 +22,9 @@
     <style name="Theme.Bobing.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Bobing.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TitleText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

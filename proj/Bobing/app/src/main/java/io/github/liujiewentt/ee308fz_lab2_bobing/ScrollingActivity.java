@@ -54,28 +54,28 @@ public class ScrollingActivity extends AppCompatActivity {
         button_go_single.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ScrollingActivity.this, temp1.class);
+                Intent intent = new Intent(ScrollingActivity.this, single_play_home_Activity.class);
                 startActivity(intent);
             }
         });
         button_go_multi_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ScrollingActivity.this, temp1.class);
+                Intent intent = new Intent(ScrollingActivity.this, multi_play_home_Activity.class);
                 startActivity(intent);
             }
         });
         button_go_rulepage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ScrollingActivity.this, temp1.class);
+                Intent intent = new Intent(ScrollingActivity.this, rulePageActivity.class);
                 startActivity(intent);
             }
         });
         button_go_about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ScrollingActivity.this, temp1.class);
+                Intent intent = new Intent(ScrollingActivity.this, aboutPageActivity.class);
                 startActivity(intent);
             }
         });

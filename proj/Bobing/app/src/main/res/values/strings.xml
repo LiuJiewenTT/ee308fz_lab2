@@ -96,4 +96,7 @@
     <string name="multiplayer_game">Multiplayer Play</string>
     <string name="about_program">About Game</string>
     <string name="show_rules">Show Rules</string>
+
+    <string name="single_player_mode">Single Player Mode</string>
+    <string name="multiplayer_mode">Multiplayer Mode</string>
 </resources>
