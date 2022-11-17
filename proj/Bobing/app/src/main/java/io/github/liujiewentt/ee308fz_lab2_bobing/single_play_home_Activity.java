@@ -1,7 +1,10 @@
 package io.github.liujiewentt.ee308fz_lab2_bobing;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -11,6 +14,8 @@ import androidx.appcompat.widget.Toolbar;
 
 
 public class single_play_home_Activity extends AppCompatActivity {
+
+    private static final String TAG = "sgpa";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,5 +60,23 @@ public class single_play_home_Activity extends AppCompatActivity {
             }
         });
 
+        Button btn = findViewById(R.id.sgm_go_btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(single_play_home_Activity.this, play.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("number", 0);
+                startActivityForResult(intent, 1, bundle);
+            }
+        });
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Bundle bundle = data.getExtras();
+        Log.d(TAG, "onActivityResult: " + bundle.getString("resv_s"));
     }
 }
