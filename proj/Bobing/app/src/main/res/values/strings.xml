@@ -99,4 +99,6 @@
 
     <string name="single_player_mode">Single Player Mode</string>
     <string name="multiplayer_mode">Multiplayer Mode</string>
+
+    <string name="play_a_round">Go!</string>
 </resources>

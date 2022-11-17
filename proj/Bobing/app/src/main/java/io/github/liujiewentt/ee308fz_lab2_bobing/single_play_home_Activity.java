@@ -44,10 +44,16 @@ public class single_play_home_Activity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.sgm_tb);
         setSupportActionBar(toolbar);
-//        ActionBar actionBar = getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowTitleEnabled(false);
 //        actionBar.setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP);
 
-
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                single_play_home_Activity.this.finish();
+            }
+        });
 
     }
 }

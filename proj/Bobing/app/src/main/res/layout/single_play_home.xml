@@ -5,47 +5,55 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/golden"
     tools:context=".single_play_home_Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/sgm_tb"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         android:background="@color/golden">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageButton
-                android:id="@+id/sgm_btn_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_baseline_arrow_back_24"
-                app:backgroundTint="#00FFFFFF"
-                 />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:gravity="center"
-                android:text="@string/single_player_mode"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:theme="@style/Theme.Bobing.TitleText" />
-        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/single_player_mode"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:theme="@style/Theme.Bobing.TitleText" />
+
     </androidx.appcompat.widget.Toolbar>
 
-    <TextView
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textAlignment="center"-->
+<!--        android:text="@string/single_player_mode"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:theme="@style/Theme.Bobing.TitleText"/>-->
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/a19" />
+
+    <Button
+        android:id="@+id/sgm_go_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="@string/play_a_round"
+        android:theme="@style/Theme.Bobing.TitleText"
+        android:backgroundTint="@color/btn_twhite"
         android:layout_gravity="center"
-        android:textAlignment="center"
-        android:text="@string/single_player_mode"
-        android:textColor="@color/black"
-        android:theme="@style/Theme.Bobing.TitleText"/>
-
+        android:layout_marginTop="140dp"
+        />
 
 </LinearLayout>

@@ -10,4 +10,5 @@
     <color name="yellow">#FFFFFF00</color>
     <color name="golden">#FFFFC107</color>
     <color name="transparent_white">#00FFFFFF</color>
+    <color name="btn_twhite">#20FFFFFF</color>
 </resources>
