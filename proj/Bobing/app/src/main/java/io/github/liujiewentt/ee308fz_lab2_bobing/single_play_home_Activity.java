@@ -78,5 +78,6 @@ public class single_play_home_Activity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         Bundle bundle = data.getExtras();
         Log.d(TAG, "onActivityResult: " + bundle.getString("resv_s"));
+//        findViewById(R.id.)
     }
 }

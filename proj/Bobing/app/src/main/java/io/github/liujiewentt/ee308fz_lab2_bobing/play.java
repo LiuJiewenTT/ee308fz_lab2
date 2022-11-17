@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
@@ -16,8 +19,9 @@ public class play extends AppCompatActivity {
 
     private static final String TAG = "play activity";
     int number = 0;
-    int[] resv_i;
+    int[] resv_i, resv_i_unsorted;
     String resv_s;
+    public int[] diceID, diceV;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,8 +51,26 @@ public class play extends AppCompatActivity {
         });
 
         resv_i = new int[6];
+//        diceID = new int[6];
+        diceID = new int[]{R.id.dice1, R.id.dice2, R.id.dice3, R.id.dice4, R.id.dice5, R.id.dice6};
+        diceV = new int[]{R.drawable.dv1, R.drawable.dv2, R.drawable.dv3, R.drawable.dv4, R.drawable.dv5, R.drawable.dv6};
 
         throwDices();
+
+        TextView tv1, tv2, tv3;
+        tv1 = findViewById(R.id.hheader_tv);
+        tv2 = findViewById(R.id.header_tv);
+        tv3 = findViewById(R.id.dice_result_i_show_tv);
+        if (resv_s == getString(R.string.Nothing)){
+            tv1.setText(getString(R.string.comfort));
+        }
+        else{
+            tv1.setText(getString(R.string.congratulations));
+        }
+        tv2.setText(resv_s);
+        tv3.setText(Arrays.toString(resv_i));
+
+        setPics();
 
     }
 
@@ -74,6 +96,10 @@ public class play extends AppCompatActivity {
             resv_i[i] = (int) (Math.random() * 6) + 1 ;
             Log.d(TAG, "throwDices: i" + i + ":" + resv_i[i]);
         }
+        resv_i_unsorted = resv_i.clone();
+//        for( i=0; i<6; ++i){
+//            Log.d(TAG, "throwDices: i_un" + i + ":" + resv_i_unsorted[i]);
+//        }
         resv_s = judge(resv_i);
         Log.d(TAG, "throwDices: s:" + resv_s);
     }
@@ -142,6 +168,17 @@ public class play extends AppCompatActivity {
                 break;
         }
         return flag;
+    }
+
+    protected void setPics(){
+        int i, j;
+        String str = "dv";
+        ImageView iv;
+        for( i=0, j=0; i<6; ++i){
+            iv = findViewById(diceID[i]);
+            iv.setImageDrawable(getResources().getDrawable(diceV[resv_i_unsorted[i]-1]));
+        }
+        i=5;
     }
 
 }
