@@ -13,6 +13,6 @@
         android:textAlignment="center"
         android:text="@string/about_program"
         android:textColor="@color/black"
-        android:theme="@style/TitleText"/>
+        android:theme="@style/Theme.Bobing.TitleText"/>
 
 </LinearLayout>

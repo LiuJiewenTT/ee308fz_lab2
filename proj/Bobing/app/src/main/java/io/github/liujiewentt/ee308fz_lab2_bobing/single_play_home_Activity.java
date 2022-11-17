@@ -20,7 +20,7 @@ public class single_play_home_Activity extends AppCompatActivity {
 //        ActionBar actionBar = getSupportActionBar();
 ////        actionBar.hide();
 ////        actionBar.setDisplayHomeAsUpEnabled(true);
-////        actionBar.setDisplayShowTitleEnabled(false);
+//        actionBar.setDisplayShowTitleEnabled(false);
 ////        actionBar.setHomeButtonEnabled(true);
 ////        actionBar.setDisplayShowHomeEnabled(true);
 ////        actionBar.setDisplayShowCustomEnabled(true);

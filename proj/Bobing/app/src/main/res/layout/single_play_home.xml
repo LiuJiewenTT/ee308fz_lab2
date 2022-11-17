@@ -12,11 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/golden">
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <ImageButton
                 android:id="@+id/sgm_btn_back"
                 android:layout_width="wrap_content"
@@ -25,33 +23,16 @@
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_baseline_arrow_back_24"
                 app:backgroundTint="#00FFFFFF" />
-            <!--            <androidx.appcompat.widget.Toolbar-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                app:navigationIcon="@drawable/ic_baseline_arrow_back_24"-->
-            <!--                android:layout_alignParentLeft="true" -->
-            <!--                />-->
-            <!--            <androidx.appcompat.widget.Toolbar-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_centerInParent="true"-->
-            <!--                app:title="@string/single_player_mode"-->
-            <!--                app:titleTextColor="@color/white"-->
-            <!--                android:layout_gravity="center"-->
-            <!--                android:textAlignment="center"-->
-
-            <!--                />-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_centerInParent="true"
-                android:layout_gravity="center"
                 android:gravity="center"
                 android:text="@string/single_player_mode"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:theme="@style/TitleText" />
+                android:theme="@style/Theme.Bobing.TitleText" />
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
 
@@ -62,7 +43,7 @@
         android:textAlignment="center"
         android:text="@string/single_player_mode"
         android:textColor="@color/black"
-        android:theme="@style/TitleText"/>
+        android:theme="@style/Theme.Bobing.TitleText"/>
 
 
 </LinearLayout>

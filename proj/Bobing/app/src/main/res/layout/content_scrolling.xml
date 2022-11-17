@@ -43,47 +43,41 @@
             app:backgroundTint="#20FFFFFF"
             app:cornerRadius="0dp" />
 
-            <Button
-                android:id="@+id/go_multi_home"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:padding="10dp"
-                android:text="@string/multiplayer_game"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_orange_light"
-                app:backgroundTint="#20FFFFFF"
-                app:cornerRadius="0dp"
-                />
+        <Button
+            android:id="@+id/go_multi_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/multiplayer_game"
+            android:theme="@style/Theme.Bobing.HomepageBtn"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            app:backgroundTint="#20FFFFFF"
+            />
 
-            <Button
-                android:id="@+id/go_rulepage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:padding="10dp"
-                android:text="@string/show_rules"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_orange_light"
-                app:backgroundTint="#20FFFFFF"
-                app:cornerRadius="0dp"
-                />
+        <Button
+            android:id="@+id/go_rulepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_rules"
+            android:theme="@style/Theme.Bobing.HomepageBtn"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            app:backgroundTint="#20FFFFFF"
+            />
 
-            <Button
-                android:id="@+id/go_about"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="10dp"
-                android:padding="10dp"
-                android:text="@string/about_program"
-                android:textAlignment="center"
-                android:textColor="@android:color/holo_orange_light"
-                app:backgroundTint="#20FFFFFF"
-                app:cornerRadius="0dp"
-                />
+        <Button
+            android:id="@+id/go_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_program"
+            android:theme="@style/Theme.Bobing.HomepageBtn"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            app:backgroundTint="#20FFFFFF"
+            />
 
         </LinearLayout>
 
