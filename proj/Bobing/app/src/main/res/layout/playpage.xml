@@ -31,8 +31,8 @@
     <GridLayout
         android:id="@+id/play_grid"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
         android:rowCount="3"
         android:columnCount="2"
         >
@@ -102,8 +102,24 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
         >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/congratulations"
+            android:theme="@style/Theme.Bobing.ConGText"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/ZhuangYuan"
+            android:theme="@style/Theme.Bobing.ConGText"
+            />
 
 
     </LinearLayout>

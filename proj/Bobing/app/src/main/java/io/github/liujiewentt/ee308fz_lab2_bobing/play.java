@@ -1,7 +1,9 @@
 package io.github.liujiewentt.ee308fz_lab2_bobing;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,8 +32,30 @@ public class play extends AppCompatActivity {
         }
         Log.d(TAG, "onCreate: number" + number);
 
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                Bundle bundle = new Bundle();
+                bundle.putString("res_s", resv_s);
+                bundle.putIntArray("resv_i", resv_i);
+                intent.putExtra("bundle", bundle);
+                setResult(1, intent);
+            }
+        });
+
         resv_i = new int[6];
 
+        throwDices();
+
+    }
+
+    public void throwDices(){
+        int i;
+        for( i=0; i<6; ++i){
+            resv_i[i] = (int) (Math.random() * 6) + 1 ;
+            Log.d(TAG, "throwDices: i" + i);
+        }
     }
 
 

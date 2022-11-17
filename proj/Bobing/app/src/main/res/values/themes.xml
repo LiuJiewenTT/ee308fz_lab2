@@ -51,4 +51,9 @@
 <!--        <item name="cornerSizeBottomRight">0dp</item>-->
 <!--        <item name="backgroundTint">#20FFFFFF</item>-->
     </style>
+
+    <style name="Theme.Bobing.ConGText">
+        <item name="color">@color/red</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

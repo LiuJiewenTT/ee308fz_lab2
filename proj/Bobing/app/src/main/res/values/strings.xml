@@ -101,4 +101,10 @@
     <string name="multiplayer_mode">Multiplayer Mode</string>
 
     <string name="play_a_round">Go!</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="XiuCai">秀才</string>
+    <string name="JuRen">举人</string>
+    <string name="TanHua">探花</string>
+    <string name="BangYan">榜眼</string>
+    <string name="ZhuangYuan">状元</string>
 </resources>
