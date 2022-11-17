@@ -8,6 +8,7 @@ import android.graphics.Typeface;
 import android.os.Build;
 import android.text.Layout;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.translation.ViewTranslationRequest;
 import android.widget.FrameLayout;
@@ -26,6 +27,7 @@ import java.util.function.Consumer;
 
 public class mtoolbar extends Toolbar {
 
+    private static final String TAG = "mtoolbar class";
     RelativeLayout rlt;
     ImageButton imgbtn;
     TextView tv;
@@ -33,24 +35,20 @@ public class mtoolbar extends Toolbar {
 
     public mtoolbar(Context context) {
         super(context);
-        rlt = new RelativeLayout(context);
-        imgbtn = new ImageButton(context);
-        tv = new TextView(context);
-        name = this.getTitle().toString();
-        initViewArgs(context);
-        rlt.addView(imgbtn);
-        rlt.addView(tv);
-        this.addView(rlt);
+        createThings(context);
+        Log.d(TAG, "mtoolbar: init ok");
 //        ((AppCompatActivity)context).getSupportActionBar
 //        ((ActionBar)((Toolbar)this)).setDisplayShowTitleEnabled(false);
     }
 
     public mtoolbar(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
+        createThings(context);
     }
 
     public mtoolbar(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        createThings(context);
     }
 
     @Override
@@ -59,6 +57,24 @@ public class mtoolbar extends Toolbar {
 
     }
 
+    public void createThings(Context context){
+        rlt = new RelativeLayout(context);
+        imgbtn = new ImageButton(context);
+        tv = new TextView(context);
+        try{
+            name = this.getTitle().toString();
+        }
+        catch (RuntimeException e){
+            Log.e(TAG, "createThings: String name encounters ERROR:" + e.getMessage());
+            name = "Untitled";
+        }
+
+
+        initViewArgs(context);
+        rlt.addView(imgbtn);
+        rlt.addView(tv);
+        this.addView(rlt);
+    }
 
 
     public void initViewArgs(Context context){
@@ -75,11 +91,13 @@ public class mtoolbar extends Toolbar {
 //        rlt.setBackgroundColor(getResources().getColor(R.color.golden));
 
         // For my Toolbar
-        ltparams = (LayoutParams) this.getLayoutParams();
-        ltparams.width = ltparams.MATCH_PARENT;
+//        ltparams = (LayoutParams) this.getLayoutParams();
+
+        int width = LayoutParams.MATCH_PARENT;
         int[] tl = {R.attr.actionBarSize};
         TypedArray typedArray = context.getTheme().obtainStyledAttributes(tl);
-        ltparams.height = (int) typedArray.getDimension(0,0);
+        int height = (int) typedArray.getDimension(0,0);
+        ltparams = new LayoutParams(width, height);
         this.setLayoutParams(ltparams);
 
         // For RelativeLayout
@@ -122,12 +140,17 @@ public class mtoolbar extends Toolbar {
     @Override
     public void setTitle(CharSequence title) {
         name = (String) title;
-        tv.setText(name);
+        Log.d(TAG, "setTitle: "+name);
+        if(tv != null){
+            tv.setText("name");
+        }
     }
 
     @Override
     public void setTitle(int resId) {
         @SuppressLint("ResourceType") TextView ttv = findViewById(resId);
-        tv.setText(ttv.getText());
+        if(tv != null){
+            tv.setText(ttv.getText());
+        }
     }
 }
