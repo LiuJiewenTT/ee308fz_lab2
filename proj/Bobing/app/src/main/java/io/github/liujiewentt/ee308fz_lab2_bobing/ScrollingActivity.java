@@ -51,18 +51,18 @@ public class ScrollingActivity extends AppCompatActivity {
         alertDialog = builder.create();
 
         // for buttons in scrolling content
-        Button button_go_temp1 = findViewById(R.id.btn_gotemp1);
+//        Button button_go_temp1 = findViewById(R.id.btn_gotemp1);
         Button button_go_single = findViewById(R.id.go_single);
         Button button_go_multi_home = findViewById(R.id.go_multi_home);
         Button button_go_rulepage = findViewById(R.id.go_rulepage);
         Button button_go_about = findViewById(R.id.go_about);
-        button_go_temp1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ScrollingActivity.this, temp1.class);
-                startActivity(intent);
-            }
-        });
+//        button_go_temp1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(ScrollingActivity.this, temp1.class);
+//                startActivity(intent);
+//            }
+//        });
         button_go_single.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
