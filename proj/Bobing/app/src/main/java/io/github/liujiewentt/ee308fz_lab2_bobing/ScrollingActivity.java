@@ -7,6 +7,7 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -17,14 +18,20 @@ import android.widget.Button;
 
 public class ScrollingActivity extends AppCompatActivity {
 
+    AlertDialog alertDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         CollapsingToolbarLayout toolBarLayout = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
         toolBarLayout.setTitle(getTitle());
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -32,11 +39,16 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-                Intent intent = new Intent(ScrollingActivity.this , rulePageActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(ScrollingActivity.this , rulePageActivity.class);
+//                startActivity(intent);
+                alertDialog.show();
             }
         });
 
+
+        builder.setView(R.layout.alertdialog_showrule);
+//        builder.setCancelable(true);
+        alertDialog = builder.create();
 
         // for buttons in scrolling content
         Button button_go_temp1 = findViewById(R.id.btn_gotemp1);
@@ -100,6 +112,12 @@ public class ScrollingActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        else if(id == R.id.action_showRules){
+            alertDialog.show();
+        }
+        else if(id == R.id.action_showAbout){
+            startActivity(new Intent(ScrollingActivity.this, aboutPageActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }
