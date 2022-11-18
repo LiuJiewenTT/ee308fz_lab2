@@ -7,22 +7,30 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ScrollingActivity"
     android:overScrollMode="never"
-    android:background="@drawable/a10"
+    android:background="@color/golden"
     tools:showIn="@layout/activity_scrolling">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="60dp"
             android:orientation="vertical">
 
-<!--            <Button-->
-<!--                android:id="@+id/btn_gotemp1"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="go temp1"-->
-<!--                android:textAllCaps="false" />-->
+            <!--            <Button-->
+            <!--                android:id="@+id/btn_gotemp1"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="go temp1"-->
+            <!--                android:textAllCaps="false" />-->
 
             <!--        <TextView-->
             <!--            android:layout_width="wrap_content"-->
@@ -30,56 +38,76 @@
             <!--            android:layout_margin="@dimen/text_margin"-->
             <!--            android:text="@string/large_text" />-->
 
-        <Button
-            android:id="@+id/go_single"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginHorizontal="10dp"
-            android:padding="10dp"
-            android:text="@string/single_player_game"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@android:color/holo_orange_light"
-            app:backgroundTint="#20FFFFFF"
-            app:cornerRadius="0dp" />
+            <Button
+                android:id="@+id/go_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:padding="20dp"
+                android:outlineSpotShadowColor="@color/red"
+                android:text="@string/single_player_game"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                app:backgroundTint="#20FFFFFF"
+                app:cornerRadius="0dp" />
 
-        <Button
-            android:id="@+id/go_multi_home"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/multiplayer_game"
-            android:theme="@style/Theme.Bobing.HomepageBtn"
-            android:textColor="@android:color/holo_orange_light"
-            android:layout_marginHorizontal="10dp"
-            android:padding="10dp"
-            app:backgroundTint="#20FFFFFF"
-            />
+            <Button
+                android:id="@+id/go_multi_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/red"
+                android:text="@string/multiplayer_game"
+                android:theme="@style/Theme.Bobing.HomepageBtn"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="10dp"
+                android:padding="20dp"
+                android:textSize="20sp"
+                app:backgroundTint="#20FFFFFF"
+                />
 
-        <Button
-            android:id="@+id/go_rulepage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/show_rules"
-            android:theme="@style/Theme.Bobing.HomepageBtn"
-            android:textColor="@android:color/holo_orange_light"
-            android:layout_marginHorizontal="10dp"
-            android:padding="10dp"
-            app:backgroundTint="#20FFFFFF"
-            />
+            <Button
+                android:id="@+id/go_rulepage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/red"
+                android:text="@string/show_rules"
+                android:theme="@style/Theme.Bobing.HomepageBtn"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="10dp"
+                android:padding="20dp"
+                android:textSize="20sp"
+                app:backgroundTint="#20FFFFFF"
+                />
 
-        <Button
-            android:id="@+id/go_about"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_program"
-            android:theme="@style/Theme.Bobing.HomepageBtn"
-            android:textColor="@android:color/holo_orange_light"
-            android:layout_marginHorizontal="10dp"
-            android:padding="10dp"
-            app:backgroundTint="#20FFFFFF"
-            />
+            <Button
+                android:id="@+id/go_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/red"
+                android:text="@string/about_program"
+                android:theme="@style/Theme.Bobing.HomepageBtn"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="10dp"
+                android:padding="20dp"
+                android:textSize="20sp"
+                app:backgroundTint="#20FFFFFF"
+                />
 
         </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
 
 </androidx.core.widget.NestedScrollView>
