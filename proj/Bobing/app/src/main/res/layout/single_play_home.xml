@@ -51,6 +51,8 @@
         android:padding="30dp"
         android:text="@string/play_a_round"
         android:theme="@style/Theme.Bobing.TitleText"
+        android:outlineSpotShadowColor="@color/white"
+        android:textColor="@color/white"
         android:backgroundTint="@color/btn_twhite"
         android:layout_gravity="center"
         android:layout_marginTop="140dp"
