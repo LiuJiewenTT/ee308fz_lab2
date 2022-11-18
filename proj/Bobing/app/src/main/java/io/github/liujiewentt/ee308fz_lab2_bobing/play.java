@@ -33,11 +33,19 @@ public class play extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
 
-        if(savedInstanceState == null){
+        Bundle bundle = getIntent().getExtras();
+
+        if(bundle == null){
             number = 0;
         }
         else{
-            number = savedInstanceState.getInt("Number");
+            number = bundle.getInt("number");
+            if(number != 0){
+                Log.d(TAG, "onCreate: number not 0: " + number);
+                String playerSymbol = bundle.getString("playerSymbol");
+                TextView tv = findViewById(R.id.play_title_tv);
+                tv.setText(getString(R.string.playHeader)+" - "+playerSymbol);
+            }
         }
         Log.d(TAG, "onCreate: number" + number);
 
@@ -178,7 +186,6 @@ public class play extends AppCompatActivity {
             iv = findViewById(diceID[i]);
             iv.setImageDrawable(getResources().getDrawable(diceV[resv_i_unsorted[i]-1]));
         }
-        i=5;
     }
 
 }

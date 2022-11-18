@@ -26,6 +26,7 @@
         <activity android:name=".multi_play_home_Activity" android:theme="@style/Theme.Bobing.NoActionBar" />
         <activity android:name=".aboutPageActivity" android:theme="@style/Theme.Bobing.NoActionBar" />
         <activity android:name=".play" android:theme="@style/Theme.Bobing.NoActionBar"/>
+        <activity android:name=".multi_play_hall_Activity" android:theme="@style/Theme.Bobing.NoActionBar"/>
     </application>
 
 </manifest>

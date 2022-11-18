@@ -109,4 +109,9 @@
     <string name="BangYan">榜眼</string>
     <string name="ZhuangYuan">状元</string>
     <string name="Nothing">没有</string>
+
+    <string name="all_results">Everybody\'s Fortune</string>
+    <string name="playHeader">Play</string>
+    <string name="player">Player</string>
+    <string name="gameover">Back</string>
 </resources>
