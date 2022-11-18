@@ -111,7 +111,8 @@ public class ScrollingActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            startActivity(new Intent(ScrollingActivity.this, SettingsActivity.class));
+//            return true;
         }
         else if(id == R.id.action_showRules){
             alertDialog.show();
