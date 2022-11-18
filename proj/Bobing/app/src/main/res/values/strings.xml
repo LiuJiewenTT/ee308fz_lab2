@@ -115,5 +115,6 @@
     <string name="player">Player</string>
     <string name="gameover">Back</string>
 
-    <string name="brief_words"> Hello, everybody! We are the team for this Bobing Game. \n        The game supports up to 10 players of max capacity. Currently it is not an online game. \n        \n        If you are interested in our project, have a look at https://github.com/LiuJiewenTT/ee308fz_lab2 \n\n   Email: liuljwtt@foxmail.com\n\n\n (Touch something! Small gifts!)</string>
+    <string name="brief_introduction"> Hello, everybody! We are the team of this Bobing Game. \n        The game supports up to 10 players of max capacity. Currently it is not an online game. </string>
+    <string name="brief_words">  If you are interested in our project, have a look at https://github.com/LiuJiewenTT/ee308fz_lab2 \n\n   Email: liuljwtt@foxmail.com\n\n\n (Touch something! Small gifts!)</string>
 </resources>

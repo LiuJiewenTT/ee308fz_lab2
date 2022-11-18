@@ -58,6 +58,16 @@
             android:layout_height="40dp"
             />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:background="@color/btn_twhite"
+            android:autoSizeTextType="uniform"
+            android:text="@string/brief_introduction"
+            />
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
