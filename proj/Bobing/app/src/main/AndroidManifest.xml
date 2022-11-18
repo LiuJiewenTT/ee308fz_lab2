@@ -10,24 +10,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bobing">
         <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ScrollingActivity"
+            android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Bobing.NoActionBar"
-            android:exported="true">
+            android:theme="@style/Theme.Bobing.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".temp1"/>
-        <activity android:name=".rulePageActivity" android:theme="@style/Theme.Bobing.NoActionBar" />
-        <activity android:name=".single_play_home_Activity" android:theme="@style/Theme.Bobing.NoActionBar"/>
-        <activity android:name=".multi_play_home_Activity" android:theme="@style/Theme.Bobing.NoActionBar" />
-        <activity android:name=".aboutPageActivity" android:theme="@style/Theme.Bobing.NoActionBar" />
-        <activity android:name=".play" android:theme="@style/Theme.Bobing.NoActionBar"/>
-        <activity android:name=".multi_play_hall_Activity" android:theme="@style/Theme.Bobing.NoActionBar"/>
+        <activity android:name=".temp1" />
+        <activity
+            android:name=".rulePageActivity"
+            android:theme="@style/Theme.Bobing.NoActionBar" />
+        <activity
+            android:name=".single_play_home_Activity"
+            android:theme="@style/Theme.Bobing.NoActionBar" />
+        <activity
+            android:name=".multi_play_home_Activity"
+            android:theme="@style/Theme.Bobing.NoActionBar" />
+        <activity
+            android:name=".aboutPageActivity"
+            android:theme="@style/Theme.Bobing.NoActionBar" />
+        <activity
+            android:name=".play"
+            android:theme="@style/Theme.Bobing.NoActionBar" />
+        <activity
+            android:name=".multi_play_hall_Activity"
+            android:theme="@style/Theme.Bobing.NoActionBar" />
     </application>
 
 </manifest>
