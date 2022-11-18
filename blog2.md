@@ -32,7 +32,7 @@ Links are provided in the [End](#End) Section.
 
 *add '!'* !!
 
-[photo](./pics/pair_work/photo-2.jpg)
+[photo](https://liujiewentt.github.io/ee308fz_lab2/pics/pair_work/photo-2.jpg)
 
 ## Working Progress
 
@@ -58,10 +58,10 @@ This section consists of *PSP Form* and *Learning Progress Bar*.
 |                    Code Review |           45            |          60          |
 |                           Test |           20            |          10          |
 |                     **Report** |                         |                      |
-|                    Test Report |           15            |                      |
-|               Size Measurement |           10            |                      |
-| Postmortem&Process Improvement |           15            |                      |
-|                      **Total** |           505           |                      |
+|                    Test Report |           15            |          15          |
+|               Size Measurement |           10            |          30          |
+| Postmortem&Process Improvement |           15            |          30          |
+|                      **Total** |           505           |         960          |
 
 ### Learning Progress Bar
 
@@ -69,8 +69,8 @@ This section consists of *PSP Form* and *Learning Progress Bar*.
 
 | week | Added code (line) | Cumulative code (lines) | Study Time this week (hours) | Cumulative learning time (hours) | Important Growth                  |
 | :--- | :---------------- | :---------------------- | :--------------------------- | :------------------------------- | :-------------------------------- |
-| 1    |                   |                         |                              |                                  | Design and unit test the back end |
-| 2    |                   |                         |                              |                                  | Fix bugs, redesign UI             |
+| 1    | 435               | 678                     | 8                            | 8                                | Design and unit test the back end |
+| 2    | 846               | 1667                    | 10                           | 18                               | Fix bugs, redesign UI             |
 
 ## Demonstration
 
@@ -95,7 +95,11 @@ This section consists of *PSP Form* and *Learning Progress Bar*.
 
 **Project** on Github.com: https://github.com/LiuJiewenTT/ee308fz_lab2
 
+URL on github.com of this passage(download): https://liujiewentt.github.io/ee308fz_lab2/blog2.md<br/>
+URL on github.com of this passage(view with Github md): https://github.com/LiuJiewenTT/ee308fz_lab2/tree/main/blog2.md
 
+URL on github.com of this passage(view as html): https://liujiewentt.github.io/ee308fz_lab2/blog2.html<br/>
+URL on csdn.net of this passage(view as html): https://bbs.csdn.net/topics/
 
 
 
