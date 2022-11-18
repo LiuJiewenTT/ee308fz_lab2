@@ -17,6 +17,15 @@ Links are provided in the [End](#End) Section.
 
 [Top](#Contents)
 
+1. Problem: Hide the default actionbar so we can make it a better look.
+   Solution: After carefully inspecting codes of some samples, we set it to some theme to solve it.
+2. Problem: Make a customized kind of actionbar and make sure it's good for reusing.
+   Solution: Tried multiple combinations of settings, we finally found the way the achieve this. This process cost us lots of time.
+3. Problem: How to think about the relationship between single player mode and multiplayer mode.
+   Solution: We made thorough understanding of class Activity and decided to share the same activity but invoked differently.
+4. Key: Speed up working progress if simple and plain solutions exist.
+5. Key: Make good uses of debug function of the IDE to figure out mistakes quickly.
+
 ## Photo Proof of Pair Working
 
 [Top](#Contents)
@@ -44,10 +53,10 @@ This section consists of *PSP Form* and *Learning Progress Bar*.
 |                    Design Spec |           15            |          15          |
 |                  Design Review |           10            |          10          |
 |                Coding Standard |           10            |          5           |
-|                         Design |           40            |                      |
-|                         Coding |           300           |                      |
-|                    Code Review |           45            |                      |
-|                           Test |           20            |                      |
+|                         Design |           40            |          60          |
+|                         Coding |           300           |         700          |
+|                    Code Review |           45            |          60          |
+|                           Test |           20            |          10          |
 |                     **Report** |                         |                      |
 |                    Test Report |           15            |                      |
 |               Size Measurement |           10            |                      |
