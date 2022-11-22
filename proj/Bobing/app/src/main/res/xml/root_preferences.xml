@@ -33,7 +33,7 @@
 
     </PreferenceCategory>
     <PreferenceCategory app:title="@string/about_header">
-        <EditTextPreference
+        <Preference
             app:title="@string/about_program"
             app:key="about_setting"/>
     </PreferenceCategory>

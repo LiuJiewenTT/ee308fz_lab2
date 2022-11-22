@@ -65,8 +65,8 @@ public class SettingsActivity extends AppCompatActivity {
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             setPreferencesFromResource(R.xml.root_preferences, rootKey);
-            EditTextPreference editTextPreference = findPreference("about_setting");
-            editTextPreference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+            Preference preference = findPreference("about_setting");
+            preference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
                     Context context = preference.getContext();
