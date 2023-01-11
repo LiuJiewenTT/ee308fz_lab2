@@ -44,20 +44,44 @@ public class listIconActivity extends AppCompatActivity {
     }
 
     public void loadUI(){
-        ImgFile img = new ImgFile();
-        Resources resources = getResources();
+        // New way to add icon to the list.
+        iconList.add(new ImgFile("cake1_c2"));
+        iconList.add(new ImgFile("cake1_c1"));
+        iconList.add(new ImgFile("cake1_c3"));
+        iconList.add(new ImgFile("cake7_1"));
+        iconList.add(new ImgFile("cake5"));
+        iconList.add(new ImgFile("cake6"));
+        iconList.add(new ImgFile("c3"));
+        iconList.add(new ImgFile("c4"));
+        iconList.add(new ImgFile("c5"));
+        iconList.add(new ImgFile("c6"));
+        iconList.add(new ImgFile("c7"));
+        iconList.add(new ImgFile("c8"));
+        iconList.add(new ImgFile("dv1"));
+        iconList.add(new ImgFile("dv2"));
+        iconList.add(new ImgFile("dv3"));
+        iconList.add(new ImgFile("dv4"));
+        iconList.add(new ImgFile("dv5"));
+        iconList.add(new ImgFile("dv6"));
+        iconList.add(new ImgFile("android_robot"));
+        iconList.add(new ImgFile("DefaultMain", getResources().getDrawable(R.drawable.cake1_c2)));
 
-        img.setFileName("c3");
-        img.setFileSrc(resources.getDrawable(R.drawable.c3));
-        iconList.add(img);
-        img = new ImgFile();
-        img.setFileName("c4");
-        img.setFileSrc(resources.getDrawable(R.drawable.c4));
-        iconList.add(img);
-        img = new ImgFile();
-        img.setFileName("c5");
-        img.setFileSrc(resources.getDrawable(R.drawable.c5));
-        iconList.add(img);
+
+        // Old way to add icon to the list.
+//        ImgFile img = new ImgFile();
+//        Resources resources = getResources();
+//
+//        img.setFileName("c3");
+//        img.setFileSrc(resources.getDrawable(R.drawable.c3));
+//        iconList.add(img);
+//        img = new ImgFile();
+//        img.setFileName("c4");
+//        img.setFileSrc(resources.getDrawable(R.drawable.c4));
+//        iconList.add(img);
+//        img = new ImgFile();
+//        img.setFileName("c5");
+//        img.setFileSrc(resources.getDrawable(R.drawable.c5));
+//        iconList.add(img);
 
         if(iconList != null && iconList.size() > 0){
             GridLayoutManager layoutManager = new GridLayoutManager(listIconActivity.this,3);
@@ -135,6 +159,24 @@ public class listIconActivity extends AppCompatActivity {
 
         public ImgFile(){}
 
+        public ImgFile(String fileName, Drawable fileSrc){
+            setFileName(fileName);
+            setFileSrc(fileSrc);
+        }
+
+        public ImgFile(String fileName){
+            int id;
+            if (fileName.equals("android_robot")){
+                id = getResources().getIdentifier("ic_launcher", "mipmap", getPackageName());
+            }
+            else{
+                id = getResources().getIdentifier(fileName, "drawable", getPackageName());
+            }
+            Drawable fileSrc = getResources().getDrawable(id);
+            setFileName(fileName);
+            setFileSrc(fileSrc);
+        }
+
         public String getFileName() { return fileName; }
 
         public void setFileName(String fileName) { this.fileName = fileName; }
@@ -149,15 +191,47 @@ public class listIconActivity extends AppCompatActivity {
 
         PackageManager packageManager = getPackageManager();
 
-        // Disable all icon
-        packageManager.setComponentEnabledSetting(new ComponentName(this, getPackageName() + ".ScrollingActivity"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-        for (int i=0; i<iconList.size(); ++i){
+        // Disable all icons
+        if(!aliasName.equals("icon_DefaultMain")){
+            Log.d(TAG, "setLauncherIcon: " + aliasName);
+            packageManager.setComponentEnabledSetting(new ComponentName(this, getPackageName() + ".ScrollingActivity"), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+        }
+        else {
+            aliasName = "ScrollingActivity";
+            Log.d(TAG, "setLauncherIcon(neg): " + aliasName);
+            // go enabling
+        }
+        // exclude default main
+        for (int i=0; i<iconList.size()-1; ++i){
             String name = iconList.get(i).getFileName();
+            if(("icon_" + name).equals(aliasName)) continue;
             packageManager.setComponentEnabledSetting(new ComponentName(this, getPackageName() + ".icon_" + name), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
         }
 
         // Enable select icon
-        packageManager.setComponentEnabledSetting(new ComponentName(this, getPackageName() + "." + aliasName), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+        packageManager.setComponentEnabledSetting(new ComponentName(this, getPackageName() + "." + aliasName), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, 0);
+        // Ensure at least one is enabled
+        // Here is not necessary.
+        IconEnsurance(aliasName);
+    }
 
+    void IconEnsurance(String aliasName){
+        // Ensure at least one is enabled
+        PackageManager packageManager = getPackageManager();
+        boolean flag = false;
+        int j = 0;
+        for (int i=0; i<iconList.size()-1; ++i){
+            String name = iconList.get(i).getFileName();
+            if(("icon_" + name).equals(aliasName)) continue;
+            j = packageManager.getComponentEnabledSetting(new ComponentName(this, getPackageName() + ".icon_" + name));
+            if (j > 0) flag = true;
+        }
+        j = packageManager.getComponentEnabledSetting(new ComponentName(this, getPackageName() + ".ScrollingActivity" ));
+        if (j > 0) flag = true;
+
+        if(!flag){
+            // enable default main
+            packageManager.setComponentEnabledSetting(new ComponentName(this, getPackageName() + ".ScrollingActivity"), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, 0);
+        }
     }
 }

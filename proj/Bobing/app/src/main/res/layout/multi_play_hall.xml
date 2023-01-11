@@ -74,7 +74,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="180dp"
-        android:backgroundTint="@color/btn_twhite"
+        android:backgroundTint="@color/btn_twhite1"
         android:outlineSpotShadowColor="@color/white"
         android:textColor="@color/white"
         android:padding="30dp"

@@ -63,7 +63,7 @@
             android:layout_height="160dp"
             android:padding="15dp"
             android:textColor="@color/black"
-            android:background="@color/btn_twhite"
+            android:background="@color/btn_twhite2"
             android:autoSizeTextType="uniform"
             android:text="@string/brief_introduction"
             />

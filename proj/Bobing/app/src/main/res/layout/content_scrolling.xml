@@ -79,7 +79,7 @@
                     android:textAllCaps="false"
                     android:textColor="@android:color/holo_orange_dark"
                     android:textSize="20sp"
-                    app:backgroundTint="@color/btn_twhite"
+                    app:backgroundTint="@color/btn_twhite2"
                     app:cornerRadius="0dp" />
 
                 <Button
@@ -94,7 +94,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:padding="20dp"
                     android:textSize="20sp"
-                    app:backgroundTint="@color/btn_twhite"
+                    app:backgroundTint="@color/btn_twhite2"
                     />
 
                 <Button
@@ -109,7 +109,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:padding="20dp"
                     android:textSize="20sp"
-                    app:backgroundTint="@color/btn_twhite"
+                    app:backgroundTint="@color/btn_twhite2"
                     />
 
                 <Button
@@ -124,7 +124,7 @@
                     android:layout_marginHorizontal="10dp"
                     android:padding="20dp"
                     android:textSize="20sp"
-                    app:backgroundTint="@color/btn_twhite"
+                    app:backgroundTint="@color/btn_twhite2"
                     />
 
 

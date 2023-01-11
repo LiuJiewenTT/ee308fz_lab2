@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:backgroundTint="@color/btn_twhite"
+        android:backgroundTint="@color/btn_twhite1"
         android:padding="30dp"
         android:text="@string/play_a_round"
         android:textColor="@color/white"
