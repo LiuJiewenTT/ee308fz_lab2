@@ -18,6 +18,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".ScrollingActivity"
             android:exported="true"
@@ -29,6 +30,86 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity-alias
+            android:name="icon_c3"
+            android:enabled="false"
+            android:label="@string/app_name"
+            android:icon="@drawable/c3"
+            android:targetActivity=".ScrollingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="icon_c4"
+            android:enabled="false"
+            android:label="@string/app_name"
+            android:icon="@drawable/c4"
+            android:targetActivity=".ScrollingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="icon_c5"
+            android:enabled="false"
+            android:label="@string/app_name"
+            android:icon="@drawable/c5"
+            android:targetActivity=".ScrollingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="icon_c6"
+            android:enabled="false"
+            android:label="@string/app_name"
+            android:icon="@drawable/c6"
+            android:targetActivity=".ScrollingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="icon_c7"
+            android:enabled="false"
+            android:label="@string/app_name"
+            android:icon="@drawable/c7"
+            android:targetActivity=".ScrollingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="icon_c8"
+            android:enabled="false"
+            android:label="@string/app_name"
+            android:icon="@drawable/c8"
+            android:targetActivity=".ScrollingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
         <activity android:name=".temp1" />
         <activity
             android:name=".rulePageActivity"
@@ -48,6 +129,10 @@
         <activity
             android:name=".multi_play_hall_Activity"
             android:theme="@style/Theme.Bobing.NoActionBar" />
+        <activity android:name=".listIconActivity"
+            android:theme="@style/Theme.Bobing.NoActionBar"/>
+        <activity android:name=".icon_viewfull_fgActivity"
+            android:theme="@style/Theme.Bobing.NoActionBar"/>
     </application>
 
 </manifest>

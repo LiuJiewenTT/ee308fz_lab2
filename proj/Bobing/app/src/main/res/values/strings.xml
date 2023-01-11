@@ -120,6 +120,8 @@
 
      <string name="settingsH">Settings</string>
     <string name="about_header">@string/about_program</string>
+    <string name="customize">Customization</string>
+    <string name="selectIcon">Select Icon</string>
 
     <string name="title_activity_settings">SettingsActivity</string>
 

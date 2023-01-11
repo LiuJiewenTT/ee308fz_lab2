@@ -9,4 +9,13 @@
         <item>reply</item>
         <item>reply_all</item>
     </string-array>
+
+    <array name="icon_entries">
+        <item>@drawable/c3</item>
+        <item>@drawable/c4</item>
+    </array>
+    <array name="icon_values">
+        <item>a</item>
+        <item>b</item>
+    </array>
 </resources>

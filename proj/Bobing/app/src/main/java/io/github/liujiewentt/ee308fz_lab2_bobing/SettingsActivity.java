@@ -65,7 +65,9 @@ public class SettingsActivity extends AppCompatActivity {
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
             setPreferencesFromResource(R.xml.root_preferences, rootKey);
+
             Preference preference = findPreference("about_setting");
+            assert preference != null;
             preference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
@@ -75,6 +77,9 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             });
 //            editTextPreference.
+
+            preference = findPreference("selectIcon");
+            preference.setIntent(new Intent(this.getContext(), listIconActivity.class));
         }
     }
 }
