@@ -78,20 +78,20 @@ This section consists of *PSP Form* and *Learning Progress Bar*.
 
 **Project** on Github.com: https://github.com/LiuJiewenTT/ee308fz_lab2
 
-**Video** link: 
+**Video** link: https://b23.tv/iPjCM8x
 
 ## End
 
 [Top](#Contents)
 
-| The Link Your Class                        | https://bbs.csdn.net/forums/MUEE308FZU202201 |
-| ------------------------------------------ | -------------------------------------------- |
-| The Link of Requirement of This Assignment | https://bbs.csdn.net/topics/608859318        |
-| MU STU ID and FZU STU ID                   | 20123850_832001217                           |
-| Teammate's MU STU ID and FZU STU ID        | 20124082_832001228                           |
-| Teammate's blog link                       | <concrete link>                              |
-| GitHub link                                | https://github.com/LiuJiewenTT/ee308fz_lab2  |
-| Video demo link                            | <concrete link>                              |
+| The Link Your Class                        | https://bbs.csdn.net/forums/MUEE308FZU202201                 |
+| ------------------------------------------ | ------------------------------------------------------------ |
+| The Link of Requirement of This Assignment | https://bbs.csdn.net/topics/608859318                        |
+| MU STU ID and FZU STU ID                   | 20123850_832001217                                           |
+| Teammate's MU STU ID and FZU STU ID        | 20124082_832001228                                           |
+| Teammate's blog link                       | [https://bbs.csdn.net/topics/609330485](https://bbs.csdn.net/topics/609330485) |
+| GitHub link                                | <https://github.com/LiuJiewenTT/ee308fz_lab2>                |
+| Video demo link                            | <https://b23.tv/iPjCM8x>                                     |
 
 **Project** on Github.com: https://github.com/LiuJiewenTT/ee308fz_lab2
 
@@ -99,7 +99,7 @@ URL on github.com of this passage(download): https://liujiewentt.github.io/ee308
 URL on github.com of this passage(view with Github md): https://github.com/LiuJiewenTT/ee308fz_lab2/tree/main/blog2.md
 
 URL on github.com of this passage(view as html): https://liujiewentt.github.io/ee308fz_lab2/blog2.html<br/>
-URL on csdn.net of this passage(view as html): https://bbs.csdn.net/topics/
+URL on csdn.net of this passage(view as html): https://bbs.csdn.net/topics/609331209
 
 
 
